@@ -1,0 +1,23 @@
+.addbtn {
+  color: lightcoral !important;
+}
+.container {
+  margin-left: 43vw;
+  margin-top: 150px;
+}
+.flex {
+  width: fit-content;
+  border: 1px solid lightcoral;
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+}
+.flex > input {
+  margin-left: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+.btn {
+  margin-top: 10px;
+}
