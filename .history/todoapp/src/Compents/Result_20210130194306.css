@@ -1,0 +1,22 @@
+.result {
+  width: 250px;
+}
+h1 {
+  animation-name: write;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  position: relative;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes anmation {
+  0% {
+    color: rgb(92, 84, 84);
+  }
+  50% {
+    color: rgb(54, 50, 50);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}

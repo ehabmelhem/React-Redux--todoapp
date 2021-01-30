@@ -1,0 +1,16 @@
+.result {
+  width: 250px;
+}
+h1 {
+  transition: all 10000ms ease-in-out;
+}
+@keyframes anmation {
+  0% {
+    color: rgb(92, 84, 84);
+  }
+  50% {
+    color: rgb(92, 84, 84);
+  }
+  100% {
+  }
+}

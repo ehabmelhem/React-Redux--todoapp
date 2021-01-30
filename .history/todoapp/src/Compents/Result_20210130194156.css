@@ -1,0 +1,17 @@
+.result {
+  width: 250px;
+}
+h1 {
+  transition: all 10000ms ease-in-out;
+}
+@keyframes anmation{
+  0{
+
+  }
+  50%{
+
+  }
+  100%{
+    
+  }
+}

@@ -1,0 +1,8 @@
+.result {
+  width: 250px;
+}
+h1 {
+  color: black;
+  background-color: whitesmoke;
+  transition: all 10000ms ease-in-out;
+}
