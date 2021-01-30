@@ -1,0 +1,24 @@
+{
+  "name": "React-Redux--todoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehabmelhem/React-Redux--todoapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehabmelhem/React-Redux--todoapp/issues"
+  },
+  "homepage": "https://github.com/ehabmelhem/React-Redux--todoapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
