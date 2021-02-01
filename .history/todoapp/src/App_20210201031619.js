@@ -26,7 +26,6 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>{stam}</h1>
         <div className="container">
           <Switch>
             <Route path="/result">

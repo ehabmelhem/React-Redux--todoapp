@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     fetch("/get-stam")
       .then((r) => r.json())
-      .then((data) => setStam(data.name));
+      .then((data) => setStam(data));
   }, []);
   const [input, setInput] = useState("");
   const [id, setId] = useState(0);

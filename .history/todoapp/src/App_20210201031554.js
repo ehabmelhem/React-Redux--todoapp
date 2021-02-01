@@ -7,12 +7,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { addTodo } from "./redux/action";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
-  const [stam, setStam] = useState("");
-  useEffect(() => {
-    fetch("/get-stam")
-      .then((r) => r.json())
-      .then((data) => setStam(data.name));
-  }, []);
+  useEffect(()=>{
+    fetch("/get-stam").then(r=>r.json()).then(data=>)
+  },[])
   const [input, setInput] = useState("");
   const [id, setId] = useState(0);
   const dispatch = useDispatch();
@@ -26,7 +23,6 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>{stam}</h1>
         <div className="container">
           <Switch>
             <Route path="/result">

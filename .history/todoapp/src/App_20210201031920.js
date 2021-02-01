@@ -9,9 +9,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   const [stam, setStam] = useState("");
   useEffect(() => {
-    fetch("/get-stam")
-      .then((r) => r.json())
-      .then((data) => setStam(data.name));
+    fetch("/get-stam", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    }).then((r) => r.json());
   }, []);
   const [input, setInput] = useState("");
   const [id, setId] = useState(0);
