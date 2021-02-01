@@ -7,6 +7,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { addTodo } from "./redux/action";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
+  useEffect(() => {
+    fetch("/get-stam", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    }).then((r) => r.json());
+  }, []);
   const [input, setInput] = useState("");
   const [id, setId] = useState(0);
   const dispatch = useDispatch();

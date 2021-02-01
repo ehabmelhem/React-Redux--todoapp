@@ -7,6 +7,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { addTodo } from "./redux/action";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
+  useEffect(() => {
+    fetch("/")
+      .then((r) => r.json())
+      .then((data) => console.log(data));
+  }, []);
   const [input, setInput] = useState("");
   const [id, setId] = useState(0);
   const dispatch = useDispatch();
